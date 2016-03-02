@@ -25,16 +25,16 @@
     // Cordova is ready
     //
     function onDeviceReady() {
-         alert('Device is ready!');
-         //iabRef = window.open('http://apache.org', '_blank', 'location=yes');
-         //iabRef.addEventListener('loadstart', iabLoadStart);
-         //iabRef.addEventListener('loadstop', iabLoadStop);
-         //iabRef.addEventListener('exit', iabClose);
+         //alert('Device is ready!');
+         iabRef = window.open('https://2tti.maxapex.net/apex/f?p=135', '_self', 'location=no');
+         iabRef.addEventListener('loadstart', iabLoadStart);
+         iabRef.addEventListener('loadstop', iabLoadStop);
+         iabRef.addEventListener('exit', iabClose);
     }
     </script>
   </head>
   <body>
-  <p>link test<br /><br />
+<!--  <p>link test<br /><br />
   <a href="#" onclick="window.open('http://www.wikipedia.org','_self','location=yes')">Wikipedia (webview)</a><br /><br />
   <a href="#" onclick="window.open('http://www.wikipedia.org','_blank','location=yes')">Wikipedia (inAppBrowser)</a><br /><br />
   <a href="#" onclick="window.open('http://www.wikipedia.org','_system','location=yes')">Wikipedia (mobile browser)</a><br /><br />
@@ -43,6 +43,6 @@
   <button type="button" onclick="window.open('http://www.wikipedia.org','_self','location=yes')">Wikipedia (webview)</button><br /><br />
   <button type="button" onclick="window.open('http://www.wikipedia.org','_blank','location=yes')">Wikipedia (inAppBrowser)</button><br /><br />
   <button type="button" onclick="window.open('http://www.wikipedia.org','_system','location=yes')">Wikipedia (mobile browser)</button><br /><br />  
-  </p>
+  </p>-->
   </body>
 </html>
