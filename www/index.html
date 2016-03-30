@@ -3,15 +3,15 @@
   <head>
     <title>GIP</title>
 
-    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-    <script type="text/javascript" charset="utf-8">
+    <scriptcharset="utf-8"  type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
     // Wait for Cordova to load
     //
     
      var pictureSource;   // picture source
     var destinationType; // sets the format of returned value 
 
-      document.addEventListener("deviceready", onDeviceReady, false);
+    document.addEventListener("deviceready", onDeviceReady, false);
     // Global InAppBrowser reference
     var iabRef = null;
 
@@ -28,6 +28,7 @@
     
     function listener(event) {
       //if (event.origin) !== "https://2tti.maxapex.net") return;
+      alert(event.data);
       if (event.data) == "vibrate") {
         navigator.notification.vibrate(2000);
       }
